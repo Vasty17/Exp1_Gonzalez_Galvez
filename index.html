@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio Sr.Bestia Tattoos</title>
+    <link rel="stylesheet" href="CSS/estilos.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/styler-register&login.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="titulo-container">
+      <div class="titulo">
+        <h1>Sr.Bestia Tattoos<span>Sr.Bestia Studio</span></h1>
+      </div>
+    </section>
+
+    <ul class="menu" style="margin-top: 35px;">
+      <li><a href="index.html" class="custom-btn btn-2">Inicio</a></li>
+      <li><a href="reserva.html" class="custom-btn btn-2">Reserva</a></li>
+      <li><a href="gallery.html" class="custom-btn btn-2">Galeria</a></li>
+      <li><a href="login.html" class="custom-btn btn-2">Iniciar Sesión</a></li>
+      <li><a href="registro.html" class="custom-btn btn-2">Registro</a></li>
+    </ul>
+
+    <section class="slider-container">
+      <img src="img/carrusel1.webp" alt="carrusel.img1" class="img-fluid" />
+      <img src="img/carrusel2.png" alt="carrusel.img2" class="img-fluid" />
+      <img src="img/carrusel3.jpg" alt="carrusel.img3" class="img-fluid" />
+      <img src="img/carrusel4.jpg" alt="carrusel.img4" class="img-fluid" />
+      <img src="img/carrusel5.jpg" alt="carrusel.img5" class="img-fluid" />
+    </section>
+
+    <button class="custom-btn btn-2" onclick="location.href='reserva.html'">
+      RESERVA
+    </button>
+
+    <!-- api del tiempo-->
+    <div class="reloj">
+      <h1>Hora Actual</h1>
+      <div id="reloj"></div>  
+    </div>
+    <!-- api del tiempo-->
+
+    <div style="padding-bottom: 4rem" id="video">
+      <center>
+        <iframe
+          class="embed-responsive-item"
+          style="border: solid white 5px; width: 40%; height: auto;"
+          src="https://www.youtube.com/embed/4A1VBwda59U"
+          title="Studio video"
+          frameborder="0"
+          allow="acce lerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </center>
+    </div>
+
+    <div
+      style="border-top: solid white 5px; background-color: black"
+      class="text-center text-lg-start"
+    >
+      <div class="container p-4">
+        <div class="row gap-3">
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase" style="color: white">Tatuajes</h5>
+            <p style="color: white">
+              En nuestro estudio, la creatividad fluye libremente, y cada
+              tatuaje es una colaboración única entre el artista y el lienzo. Ya
+              sea tu primer tatuaje o el último de muchos, en Daruma, cada
+              sesión es una experiencia única y personalizada
+            </p>
+          </div>
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase" style="color: white">Sobre nosotros</h5>
+            <p style="color: white">
+              Sr. Bestia nace año 2017 de la mano de dos socios que tienen un
+              objetivo en mente, crear un lugar único para vivir la experiencia
+              de tatuarse en Chile. Creando un concepto único desde la
+              arquitectura hasta su experiencia en sí. Usando los estándares más
+              exigentes a nivel mundial en higiene del tatuaje y la
+              infraestructura para que tatuadores como clientes se sientan lo
+              más cómodo al momento de tatuar.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-body-tertiary text-center">
+      <div class="container p-4 pb-0">
+        <section class="mb-4">
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #3b5998"
+            href="https://www.Facebook.com/"
+            target="_blank"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #55acee"
+            href="https://www.x.com/"
+            target="_blank"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #ac2bac"
+            href="https://www.instagram.com/"
+            target="_blank"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #0082ca"
+            href="https://www.linkedin.com/"
+            target="_blank"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #333333"
+            href="https://www.github.com/"
+            target="_blank"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+      </div>
+
+      <div
+        class="text-center p-3"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        © 2020 Copyright:
+        <a class="text-body" href="#">Exp1_Galvez_Gonzalez</a>
+      </div>
+    </footer>
+  </body>
+</html>

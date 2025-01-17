@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/styler-register&login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section class="titulo-container">
+        <div class="titulo">
+          <h1>Sr.Bestia Tattoos<span>Sr.Bestia Studio</span></h1>
+        </div>
+      </section>
+
+    <ul class="menu" style="margin-top: 35px; margin-bottom: 3rem;">
+        <li><a href="index.html" class="custom-btn btn-2">Inicio</a></li>
+        <li><a href="reserva.html" class="custom-btn btn-2">Reserva</a></li>
+        <li><a href="gallery.html" class="custom-btn btn-2">Galeria</a></li>
+        <li><a href="login.html" class="custom-btn btn-2">Iniciar Sesión</a></li>
+        <li><a href="registro.html" class="custom-btn btn-2">Registro</a></li>
+      </ul>
+
+    <main>
+        <form action="" class="formulario" id="formulario">
+            <h2 style="color: white;">Register</h2>
+
+            <div class="formulario__grupo" id="grupo__usuario">
+                <label for="usuario" class="formulario__label" style="color: white;">Username</label>
+
+                <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Usuario" style="background-color: rgba(255, 255, 255, 0.8);">
+
+					<i class="formulario__validacion-estado"></i>
+                </div>
+                <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 digitos y solo puede contener numeros, letras y guion bajo</p>
+            </div>
+
+            <div class="formulario__grupo" id="grupo__correo">
+                <label for="correo" class="formulario__label" style="color: white;">Email</label>
+
+                <div class="formulario__grupo-input">
+                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="xxx@xxx.com" style="background-color: rgba(255, 255, 255, 0.8);">
+
+					<i class="formulario__validacion-estado"></i>
+                </div>
+				<p class="formulario__input-error">El correo tiene que tener un formato de email valido</p>
+            </div>
+
+            <div class="formulario__grupo" id="grupo__password">
+                <label for="password" class="formulario__label" style="color: white;">Password</label>
+
+                <div class="formulario__grupo-input">
+                <input type="password" class="formulario__input" name="password" id="password" style="background-color: rgba(255, 255, 255, 0.8);">
+				<input type="checkbox" id="showPassword"> Mostrar Contraseña
+					<i class="formulario__validacion-estado"></i>
+                </div>
+				<p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+            </div>
+
+            <div class="formulario__grupo" id="grupo__password2">
+                <label for="password2" class="formulario__label" style="color: white;">Confirm Password</label>
+                <div class="formulario__grupo-input">
+                <input type="password" class="formulario__input" name="password2" id="password2" style="background-color: rgba(255, 255, 255, 0.8);">
+				<input type="checkbox" id="showPassword"> Mostrar Contraseña	
+					<i class="formulario__validacion-estado"></i>
+                </div>
+				<p class="formulario__input-error">La contraseña no coincide.</p>
+			</div>
+			<div id="formulario__mensaje" class="formulario__mensaje" style="font-size: small;">Por favor rellena el formulario correctamente.</div>
+
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn" style="background-color: #007bff; color: white;">Register</button>
+
+				<div id="formulario__mensaje-exito" class="formulario__mensaje">Formulario enviado exitosamente!</div>
+            </div>
+        </form>
+    </main>
+    <script src="js/index.js"></script>
+
+    <footer class="bg-body-tertiary text-center" style="margin-top: 5rem;">
+        <div class="container p-4 pb-0">
+          <section class="mb-4">
+            <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="https://www.Facebook.com/" target="_blank" role="button"><i class="fab fa-facebook-f"></i></a>
+            <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="https://www.x.com/" target="_blank" role="button"><i class="fab fa-twitter"></i></a>
+            <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="https://www.instagram.com/" target="_blank" role="button"><i class="fab fa-instagram"></i></a>
+            <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="https://www.linkedin.com/" target="_blank" role="button"><i class="fab fa-linkedin-in"></i></a>
+            <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #333333;" href="https://www.github.com/" target="_blank" role="button"><i class="fab fa-github"></i></a>
+          </section>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2020 Copyright:
+          <a class="text-body" href="#">Exp1_Galvez_Gonzalez</a>
+        </div>
+    </footer>
+</body>
+</html>

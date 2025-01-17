@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1a1a1a; /* Dark background for better contrast */
+
+    background: url(https://cdn.suwalls.com/wallpapers/abstract/polygon-26677-2560x1600.jpg) no-repeat;
+    color: #fff; /* White text color */
+}
+
+main {
+    max-width: 400px; /* Center the form */
+    width: 90%;
+    margin: auto;
+    padding: 40px;
+    background: #1a1a1a; /* Solid dark background */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column; /* Change to column for centering */
+    align-items: center; /* Center items */
+    gap: 20px; /* Space between fields */
+}
+.formulario h2 {
+    color: white;
+}
+
+.formulario__label {
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.formulario__grupo-input {
+    position: relative;
+    width: 300px; /* Ensure full width for inputs */
+}
+
+.formulario__input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8); /* Adjusted opacity for inputs */
+
+    border: 1px solid #fff; /* White border */
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 10px;
+    transition: .3s ease all;
+}
+
+.formulario__input:focus {
+    border: 1px solid #0075FF; /* Highlight border on focus */
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error {
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+}
+
+.formulario__input-error-activo {
+    display: block;
+}
+
+.formulario__validacion-estado {
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+}
+
+.formulario__checkbox {
+    margin-right: 10px;
+}
+
+.formulario__grupo-terminos, 
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+    grid-column: span 2;
+}
+
+.formulario__mensaje {
+    height: 45px;
+    line-height: 45px;
+    background: #F66060;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
+}
+
+.formulario__mensaje-activo {
+    display: block;
+}
+
+.formulario__mensaje p {
+    margin: 0;
+}
+
+.formulario__grupo-btn-enviar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario__btn {
+    height: 45px;
+    line-height: 45px;
+    width: 200px;
+    background: #007bff; /* Updated to match the new design */
+
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .1s ease all;
+}
+
+.formulario__btn:hover {
+    background: #004494; /* Even darker blue on hover */
+
+    box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.formulario__input-error {
+    color: red; /* Red text for error messages */
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none; /* Initially hidden */
+}
+
+.formulario__input-error-activo {
+    display: block; /* Show when there's an error */
+}
+
+.formulario__mensaje-exito {
+    color: #119200;
+    display: none;
+}
+
+.formulario__mensaje-exito-activo {
+    display: block; /* Show when there's a success */
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+    color: #1ed12d;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+    color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+    color: #bb2929;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+    border: 3px solid #bb2929;
+}
+
+/* ----- -----  Mediaqueries ----- ----- */
+@media screen and (max-width: 800px) {
+    .formulario {
+        grid-template-columns: 1fr;
+    }
+
+    .formulario__grupo-terminos, 
+    .formulario__mensaje,
+    .formulario__grupo-btn-enviar {
+        grid-column: 1;
+    }
+
+    .formulario__btn {
+        width: 100%;
+    }
+}
+
+/* api del timpo*/
+.reloj {
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.reloj #reloj {
+    font-size: 48px;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}

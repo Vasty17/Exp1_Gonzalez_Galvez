@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+/* TITULO - TITULO - TITULO - TITULO - TITULO - TITULO - */
+.titulo h1 {
+    text-align:center; font-size:50px; text-transform:uppercase; color:#ffffff; letter-spacing:1px;
+    font-family:"Playfair Display", serif; font-weight:400;
+    padding-top: 4rem;  
+    background-color: #000000;
+    border-bottom: solid white 5px;
+    height: 14rem;
+}
+.titulo h1 span {
+    margin-top: 5px;
+    font-size:15px; color:#bebebe; word-spacing:1px; font-weight:normal; letter-spacing:2px;
+    text-transform: uppercase; font-family:"Raleway", sans-serif; font-weight:500;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+}
+.titulo h1 span:after,.titulo h1 span:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    height: 5px;
+    background-color:#000000;
+}
+/* TITULO - TITULO - TITULO - TITULO - TITULO - TITULO - */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header {
+    display: flex;
+    color:  white;
+    font-family:"Playfair Display";
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border: solid white 5px;
+    border-radius: 1rem;
+    height: 5rem;
+    margin: 8%;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: fit-content;
+}
+
+.row {
+    padding-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 1 1 100%; /* Por defecto ocupa el 100% */
+}
+
+@media (min-width: 768px) {
+    .col {
+        flex: 1 1 48%; /* En pantallas más grandes ocupa el 48% */
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card {
+    border-radius: 15px;
+    margin: 50px auto; /* Center the card */
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid white;
+}
+
+@media (max-width: 576px) {
+    .titulo-container h1 {
+       font-size: 24px; /* Ajusta el tamaño del texto en móviles */
+    }
+}

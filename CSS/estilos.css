@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+/* TITULO - TITULO - TITULO - TITULO - TITULO - TITULO - */
+.titulo h1 {
+    text-align:center; font-size:50px; text-transform:uppercase; color:#ffffff; letter-spacing:1px;
+    font-family:"Playfair Display", serif; font-weight:400;
+    padding-top: 4rem;  
+    background-color: #000000;
+    border-bottom: solid white 5px;
+    height: 14rem;
+}
+.titulo h1 span {
+    margin-top: 5px;
+    font-size:15px; color:#bebebe; word-spacing:1px; font-weight:normal; letter-spacing:2px;
+    text-transform: uppercase; font-family:"Raleway", sans-serif; font-weight:500;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+}
+.titulo h1 span:after,.titulo h1 span:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    height: 5px;
+    background-color:#000000;
+}
+/* TITULO - TITULO - TITULO - TITULO - TITULO - TITULO - */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header {
+    display: flex;
+    color:  white;
+    font-family:"Playfair Display";
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border: solid white 5px;
+    border-radius: 1rem;
+    height: 5rem;
+    margin: 8%;
+}
+
+.menu {
+    list-style: none;
+    margin: 0 auto;
+    padding: 12px;
+    overflow: hidden;
+    background-color: #000000;
+    border: solid white 5px;
+    width: fit-content;
+}
+
+.menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a {
+    display: block;
+    color: white; /* Ensure text color is white */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #111;
+}
+
+/* INDEX - INDEX - INDEX - INDEX - INDEX - INDEX - */
+@media (max-width: 768px) {
+    .titulo h1 {
+        font-size: 24px; /* Ajusta el tamaño del título en móviles */
+    }
+
+    .menu {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: center;
+    }
+}
+/* INDEX - INDEX - INDEX - INDEX - INDEX - INDEX - */
+
+/* CARRUSEL - CARRUSEL - CARRUSEL - CARRUSEL */
+.custom-btn {
+    padding-top: 1rem;
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  } 
+.btn-2 {
+    background: rgb(41, 40, 40);
+    background: linear-gradient(0deg, rgb(41, 40, 40) 0%, rgb(41, 40, 40) 100%);
+    border: none;
+  }
+.btn-2:before {
+    height: 0%;
+    width: 2px;
+  }
+.btn-2:hover {
+    box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+  }
+#video{
+    margin:auto;
+    display: block;
+    padding-top: 2rem;
+}
+.slider-container {
+    display: flex;
+    width: 600px;
+    height: 430px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border: solid white 5px;
+}
+.slider-container img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+.slider-container img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+/* CARRUSEL - CARRUSEL - CARRUSEL - CARRUSEL */
+
+
+/* GALLERY - GALLERY - GALLERY */
+@media (max-width: 768px) {
+    .colg {
+        flex: 1 1 100%;
+    }
+}
+.colg {
+    flex: 1 1 30%;
+    margin: 5px;
+}
+.row-g {
+    padding: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.row-back {
+    border: solid white 5px;
+    border-radius: 1rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-size: auto;
+    background-color:  hsla(0, 0%, 0%, 70%);
+    margin-bottom: 5rem;
+}
+.vh-100 {
+    padding-bottom: 80rem;
+    border: solid white 5px;
+    background-color: hsla(0, 0%, 0%, 70%);
+    border-radius: 15px;
+    margin: 10rem;
+}
+.card {
+    width: 45rem;
+    margin: 0 auto;
+}
+.figure {
+    color: white;
+}
+
+/* New rule for figcaption */
+figcaption {
+    color: white;
+}
+/* GALLEY - GALLERY - GALLERY */

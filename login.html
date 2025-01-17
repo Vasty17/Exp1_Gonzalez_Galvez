@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="CSS/estilos.css">
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap-grid.css">
+  <link rel="stylesheet" href="bootstrap-reboot.css">
+  <link rel="stylesheet" href="bootstrap-utilities.css">
+  <link rel="stylesheet" href="CSS/styler-register&login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+</head>
+<body>
+    <section class="titulo-container" style="padding-bottom: 3rem;">
+        <div class="titulo">
+          <h1>Sr.Bestia Tattoos<span>Sr.Bestia Studio</span></h1>
+        </div>
+      </section>
+
+      <ul class="menu" style="margin-bottom: 3rem;">
+        <li><a href="index.html" class="custom-btn btn-2">Inicio</a></li>
+        <li><a href="reserva.html" class="custom-btn btn-2">Reserva</a></li>
+        <li><a href="gallery.html" class="custom-btn btn-2">Galeria</a></li>
+        <li><a href="login.html" class="custom-btn btn-2">Iniciar Sesión</a></li>
+        <li><a href="registro.html" class="custom-btn btn-2">Registro</a></li>
+      </ul>
+
+    <main>
+        <form action="" class="formulario" id="formulario">
+            <h2 style="color: white;">Login</h2>
+
+            <div class="formulario__grupo" id="grupo__correo">
+                <label for="correo" class="formulario__label" style="color: white;">Email</label>
+
+                <div class="formulario__grupo-input">
+                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="xxx@xxx.com" style="background-color: rgba(255, 255, 255, 0.8);">
+
+					<i class="formulario__validacion-estado"></i>
+                </div>
+				<p class="formulario__input-error">El correo tiene que tener un formato de email valido</p>
+            </div>
+
+            <div class="formulario__grupo" id="grupo__password">
+                <label for="password" class="formulario__label" style="color: white;">Password</label>
+
+                <div class="formulario__grupo-input">
+                <input type="password" class="formulario__input" name="password" id="password" style="background-color: rgba(255, 255, 255, 0.8);">
+                <input type="checkbox" id="showPassword"> Mostrar Contraseña
+					<i class="formulario__validacion-estado"></i>
+                </div>
+				<p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+            </div>
+
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn" style="background-color: #007bff; color: white;">Login In</button>
+            </div>
+        </form>
+    </main>
+  <script src="js/index.js"></script>
+
+  <footer class="bg-body-tertiary text-center">
+    <div class="container p-4 pb-0">
+      <section class="mb-4">
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1"
+          style="background-color: #3b5998"
+          href="https://www.Facebook.com/"
+          target="_blank"
+          role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1"
+          style="background-color: #55acee"
+          href="https://www.x.com/"
+          target="_blank"
+          role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1"
+          style="background-color: #ac2bac"
+          href="https://www.instagram.com/"
+          target="_blank"
+          role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1"
+          style="background-color: #0082ca"
+          href="https://www.linkedin.com/"
+          target="_blank"
+          role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1"
+          style="background-color: #333333"
+          href="https://www.github.com/"
+          target="_blank"
+          role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+    </div>
+
+    <div
+      class="text-center p-3"
+      style="background-color: rgba(0, 0, 0, 0.05)"
+    >
+      © 2020 Copyright:
+      <a class="text-body" href="#">Exp1_Galvez_Gonzalez</a>
+    </div>
+  </footer>
+</body>
+</html>
